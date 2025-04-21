@@ -1,4 +1,4 @@
-Here is a `README.md` file content based on the project you've been working on. You can copy and paste this into a file named `README.md` in the root of your GitHub repository.
+
 
 ```markdown
 # NestJS & React Task Manager CRUD Application
