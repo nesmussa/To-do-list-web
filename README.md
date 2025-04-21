@@ -1,6 +1,4 @@
-Okay, I will combine the standard NestJS starter README content with the project-specific details for your NestJS & React Task Manager application that we discussed.
 
-Here is the updated and combined `README.md` content:
 
 ````markdown
 <p align="center">
@@ -226,10 +224,5 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
 
-```
 
-This combined README includes the NestJS logo and badges, your project-specific title and description, the technologies used, detailed setup instructions for both frontend and backend, API endpoints, project structure guidance, and retains the helpful NestJS-specific sections on running tests, deployment, resources, support, and staying in touch.
-
-Remember to replace the placeholder values like `<your-repository-url>` and database credentials with your actual project details.
-```
 "# To-do-list-web" 
