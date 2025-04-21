@@ -1,0 +1,266 @@
+/* Home.css - Converted to vw/vh (Experimental) */
+
+.hom {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Align items to the top instead of center if content is taller than viewport */
+    width: 100vw;
+    /* Already 100% which is equivalent to 100vw for width */
+    min-height: 100vh;
+    /* Already 100vh */
+    padding: 1.5vw 1.5vh;
+    /* Converted padding */
+    box-sizing: border-box;
+    background-color: #f4f7f6;
+    overflow: hidden;
+    /* Hides both horizontal and vertical scrollbars */
+    /* If you only want to hide horizontal:
+       overflow-x: hidden;
+       overflow-y: auto;
+    */
+}
+
+.home_contener {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    /* Converted percentage width */
+    max-width: 50vw;
+    /* Adjusted max-width to vw */
+    height: auto;
+    border-radius: 0.5vw;
+    /* Converted border-radius */
+    box-shadow: rgba(0, 0, 0, 0.1) 0vw 0.3vh 0.8vh;
+    /* Converted box-shadow offsets and blur */
+    background-color: #ffffff;
+    padding: 1.8vw 1.8vh;
+    /* Converted padding */
+}
+
+.add_butun {
+    display: flex;
+    width: 100%;
+    /* Already 100% */
+    justify-content: flex-end;
+    margin-bottom: 1.5vh;
+    /* Converted margin-bottom */
+}
+
+/* Specific styles for the Add button Link */
+.add_butun a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1vw;
+    /* Converted font-size */
+    padding: 0.8vh 1.5vw;
+    /* Converted padding */
+    border-radius: 0.4vh;
+    /* Converted border-radius */
+    background-color: #007bff;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: rgba(0, 123, 255, 0.3) 0vw 0.3vh 0.6vh;
+    /* Converted box-shadow */
+}
+
+.add_butun a:hover {
+    background-color: #0056b3;
+    box-shadow: rgba(0, 86, 179, 0.4) 0vw 0.3vh 0.7vh;
+    /* Converted box-shadow */
+}
+
+.add_butun a .svg-inline--fa {
+    margin-right: 0.6vw;
+    /* Converted margin-right */
+}
+
+.tasklist {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    /* Converted gap (vertical) */
+    width: 100%;
+    /* Already 100% */
+}
+
+.eachtask {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 0.1vh solid #e0e0e0;
+    /* Converted border thickness */
+    border-radius: 0.5vh;
+    /* Converted border-radius */
+    box-shadow: rgba(0, 0, 0, 0.05) 0vw 0.1vh 0.3vh;
+    /* Converted box-shadow */
+    padding: 1.1vh 1.5vw;
+    /* Converted padding */
+    margin-bottom: 0;
+    /* Already 0 */
+    word-break: break-word;
+}
+
+.eachtask h2 {
+    margin-top: 0;
+    /* Already 0 */
+    margin-bottom: 0.6vh;
+    /* Converted margin-bottom */
+    font-size: 1.2vw;
+    /* Converted font-size */
+    color: #343a40;
+}
+
+.eachtask p {
+    margin-top: 0;
+    /* Already 0 */
+    margin-bottom: 0.9vh;
+    /* Converted margin-bottom */
+    font-size: 1vw;
+    /* Converted font-size */
+    color: #6c757d;
+    line-height: 1.5;
+    /* Unitless line-height is generally preferred */
+}
+
+.eachtask h6 {
+    margin-top: 0;
+    /* Already 0 */
+    margin-bottom: 1.1vh;
+    /* Converted margin-bottom */
+    font-size: 0.9vw;
+    /* Converted font-size */
+    color: #28a745;
+    font-weight: normal;
+}
+
+.eachtask span {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1.5vw;
+    /* Converted gap (horizontal) */
+    margin-top: 0.7vh;
+    /* Converted margin-top */
+    padding-top: 0.7vh;
+    /* Converted padding-top */
+    border-top: 0.1vh solid #e9ecef;
+    /* Converted border thickness */
+}
+
+/* Specific styles for action links (Update, Done) */
+.eachtask span a {
+    text-decoration: none;
+    font-size: 0.9vw;
+    /* Converted font-size */
+    color: #007bff;
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.eachtask span a:hover {
+    color: #0056b3;
+}
+
+/* Style for the "Done" link */
+.eachtask span a:last-child {
+    color: #28a745;
+}
+
+.eachtask span a:last-child:hover {
+    color: #218838;
+}
+
+.eachtask span a .svg-inline--fa {
+    margin-right: 0.4vw;
+    /* Converted margin-right */
+}
+
+/* Responsive adjustments - These may now behave very differently or be less effective */
+@media (max-width: 768px) {
+    .home_contener {
+        width: 95vw;
+        /* Converted percentage width */
+        padding: 1.5vw 1.5vh;
+        /* Converted padding */
+    }
+
+    .add_butun a {
+        font-size: 1.1vw;
+        /* Converted font-size */
+        padding: 0.6vh 1.2vw;
+        /* Converted padding */
+    }
+
+    .eachtask h2 {
+        font-size: 1.3vw;
+        /* Converted font-size */
+    }
+
+    .eachtask p {
+        font-size: 1.1vw;
+        /* Converted font-size */
+    }
+
+    .eachtask h6 {
+        font-size: 1vw;
+        /* Converted font-size */
+    }
+
+    .eachtask span {
+        gap: 1.2vw;
+        /* Converted gap */
+        justify-content: center;
+    }
+
+    .eachtask span a {
+        font-size: 1vw;
+        /* Converted font-size */
+    }
+}
+
+/* Styles for the Delete Button (Green) */
+.eachtask span button.delete-button {
+    display: inline-flex;
+    /* Use inline-flex to align icon and text */
+    align-items: center;
+    background-color: #28a745;
+    /* Changed to a standard green color */
+    color: white;
+    /* White text color */
+    border: none;
+    border-radius: 5px;
+    /* Rounded corners */
+    padding: 5px 10px;
+    /* Padding inside the button */
+    font-size: 0.9rem;
+    /* Match font size with update link */
+    cursor: pointer;
+    /* Show pointer cursor */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transitions */
+    box-shadow: rgba(40, 167, 69, 0.3) 0px 2px 5px;
+    /* Subtle green shadow */
+}
+
+.eachtask span button.delete-button:hover {
+    background-color: #218838;
+    /* Darker green on hover */
+    box-shadow: rgba(33, 136, 56, 0.4) 0px 2px 6px;
+    /* Adjust shadow on hover */
+}
+
+.eachtask span button.delete-button .svg-inline--fa {
+    margin-right: 5px;
+    /* Space between icon and text */
+}
+
+/* Add this rule to your responsive adjustments if you have them */
+@media (max-width: 768px) {
+    .eachtask span button.delete-button {
+        font-size: 0.8rem;
+        /* Smaller action link text */
+    }
+}
